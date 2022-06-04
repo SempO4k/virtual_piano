@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Virtual Piano</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="white-keys">
+    <kbd>A</kbd>
+    <kbd>S</kbd>
+    <kbd>D</kbd>
+    <kbd>F</kbd>
+    <kbd>G</kbd>
+    <kbd>H</kbd>
+    <kbd>J</kbd>
+    </div>
+    <div class="black-keys" style="margin-bottom: 50px;">
+    <kbd style="margin-right: 15px;margin-left: 22px">W</kbd>
+    <kbd style="margin-right: 74px;">E</kbd>
+    <kbd style="margin-right: 15px">T</kbd>
+    <kbd style="margin-right: 15px">Y</kbd>
+    <kbd style="margin-right: 15px;">U</kbd>
+    </div>
+</div>
+<script>
+function pressedKey() {
+document.addEventListener("keydown", function (event){
+    if (event.code === "KeyA") {
+        let audio = new Audio("media/A.mp3");
+        audio.play();
+    } else if (event.code === "KeyS") {
+        let audio = new Audio("media/S.mp3");
+        audio.play();
+    } else if (event.code === "KeyD") {
+        let audio = new Audio("media/D.mp3");
+        audio.play();
+    }  else if (event.code === "KeyF") {
+        let audio = new Audio("media/F.mp3");
+        audio.play();
+    }  else if (event.code === "KeyG") {
+        let audio = new Audio("media/G.mp3");
+        audio.play();
+    } else if (event.code === "KeyH") {
+        let audio = new Audio("media/H.mp3");
+        audio.play();
+    }else if (event.code === "KeyJ") {
+        let audio = new Audio("media/J.mp3");
+        audio.play();
+    }else if (event.code === "KeyW") {
+            let audio = new Audio("media/J.mp3");
+            audio.play();
+    }else if (event.code === "KeyE") {
+        let audio = new Audio("media/J.mp3");
+        audio.play();
+    }else if (event.code === "KeyT") {
+        let audio = new Audio("media/J.mp3");
+        audio.play();
+    }else if (event.code === "KeyY") {
+        let audio = new Audio("media/J.mp3");
+        audio.play();
+    }else if (event.code === "KeyU") {
+        let audio = new Audio("media/J.mp3");
+        audio.play();
+    } else (console.log('Pressed wrong key'));
+});
+}
+pressedKey();
+</script>
+</body>
+</html>
